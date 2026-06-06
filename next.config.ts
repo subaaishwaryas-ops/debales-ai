@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const dns = require("dns");
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+const nextConfig = {};
+module.exports = nextConfig;
